@@ -34,7 +34,9 @@ public class HelpMenu extends Menu {
 			"the better. The faster you find the orangutan, the better. So, find the", //
 			"orangutan, save the zoo, and enjoy playing!", //
 			" ", //
-			"If any mobs spawn in rocks, tough luck, just press escape to restart." };
+			"If any mobs spawn in rocks, tough luck, just press escape to restart.", //
+			" ", //
+			"˙´¥ çå∂∂å®˚ ˜ˆç´ √ˆ∂´øß ©øø∂ ¬¨ç˚ ø˜ ¥ø¨® ¥ø¨†¨∫´ ç˙å˜˜´¬" };
 		
 		for (int i = 0; i < text.length; i++) {
 			render.drawText(text[i], 10 + 2, 80 + i * 30 + 2, 24, 0, 0);

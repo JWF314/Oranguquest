@@ -28,6 +28,7 @@ public class AboutMenu2 extends Menu {
 			"the park, and we were talking about orangutans. And then we", //
 			"figured we could make a game about orangutans. And then Chesapeake", //
 			"had an idea. It was basically this game exactly. He drew the graphics", //
+			"(I drew some as well)", //
 			"while I wrote every line of code including this so you can read what I", //
 			"am typing. If it wasn't for TheCherno, we would not be here. And that's", //
 			"basically it. Thanks for playing!", //

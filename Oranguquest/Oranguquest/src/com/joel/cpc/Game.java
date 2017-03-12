@@ -34,7 +34,7 @@ public class Game extends Canvas implements Runnable {
 	private static final int SCALE = 3;
 	
 	private static final String TITLE = "Oranguquest";
-	private static String version  = "Alpha 0.1.0";
+	private static String version  = "Alpha 0.1.1";
 	
 	private Thread thread;
 	private JFrame frame;
@@ -53,8 +53,6 @@ public class Game extends Canvas implements Runnable {
 	public Game() {
 		Dimension size = new Dimension(WIDTH * SCALE, HEIGHT * SCALE);
 		setPreferredSize(size);
-		setMaximumSize(size);
-		setMinimumSize(size);
 		
 		img = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
 		pixels = ((DataBufferInt)img.getRaster().getDataBuffer()).getData();
@@ -152,8 +150,8 @@ public class Game extends Canvas implements Runnable {
 			v.y = 110;
 			p.x = 150;
 			p.y = 150;
-			o.x = rand.nextInt(40 * 40);
-			o.y = rand.nextInt(40 * 40);
+			o.x = rand.nextInt(44 * 44);
+			o.y = rand.nextInt(44 * 44);
 			PlayMenu.biome = -1;
 		}
 	}
@@ -203,7 +201,7 @@ public class Game extends Canvas implements Runnable {
 	
 	public static void main(String[] args) {
 		Game game = new Game();
-		game.frame.setResizable(false);
+		game.frame.setResizable(true);
 		game.frame.setTitle(TITLE);
 		game.frame.add(game);
 		game.frame.pack();
